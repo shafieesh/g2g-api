@@ -7,9 +7,8 @@ import java.util.List;
 
 public class _G2GData {
 
-    public final AccountData account = new AccountData();
-    public final ClientData client = new ClientData();
-
+    public  AccountData account = new AccountData();
+    public  ClientData client = new ClientData();
 
     public int request;
     public Integer subRequest;
