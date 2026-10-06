@@ -7,6 +7,11 @@ import java.util.List;
 
 public class _G2GData {
 
+    public static int accountID;
+    public static String accountCredential;
+    public static String clientAppName = "API";;
+    public static String clientLanguage = "en";
+
     public  AccountData account = new AccountData();
     public  ClientData client = new ClientData();
 
@@ -35,16 +40,18 @@ public class _G2GData {
 
     public static class AccountData {
 
-        public static int id = Integer.parseInt(DynamicConfig.getMap("API-G2G-ID"));
-        public static String credential = DynamicConfig.getMap("API-G2G-Credential");
+        public int id = accountID;
+        public String credential = accountCredential;
+        public String username;
+        public String password;
     }
 
     public static class ClientData {
 
-        public static String appName = "API";
-        public final String platform = "API";
-        public final String version = "1.0.0";
-        public static String language = "en";
+        public String appName = clientAppName;
+        public String platform = "API";
+        public String version = "1.0.0";
+        public String language = clientLanguage;
     }
 
     public static class Order {

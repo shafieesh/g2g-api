@@ -35,10 +35,10 @@ public class _G2GAPI extends _API {
 
     public static void config(int id, String credential, String appName, String language) {
 
-        _G2GData.AccountData.id = id;
-        _G2GData.AccountData.credential = credential;
-        _G2GData.ClientData.appName = appName;
-        _G2GData.ClientData.language = language;
+        _G2GData.accountID = id;
+        _G2GData.accountCredential = credential;
+        _G2GData.clientAppName = appName;
+        _G2GData.clientLanguage = language;
     }
 
     public void call(_G2GData request, boolean async, ApiCallback callback) {
